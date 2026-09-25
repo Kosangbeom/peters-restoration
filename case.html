@@ -120,11 +120,11 @@ function BeforeAfter({className=""}){
   );
 }
 
-function ImageStrip(){
+function ImageStrip({large}){
   const swatches=[["#4a3826","#8a6a45"],["#3a3835","#6b6560"],["#5a4a3a","#a68a63"],["#6b5c4a","#c9a769"],["#2f2e2b","#5c574e"]];
   return (
-    <div className="grid grid-cols-5 gap-2 md:gap-3 max-w-5xl mx-auto">
-      {swatches.map((s,i)=><Swatch key={i} c1={s[0]} c2={s[1]} className="aspect-square"/>)}
+    <div className={"grid grid-cols-5 "+(large?"gap-1.5 md:gap-3":"gap-2 md:gap-3")+" w-full"}>
+      {swatches.map((s,i)=><Swatch key={i} c1={s[0]} c2={s[1]} className={large?"aspect-[3/4] md:aspect-[4/5]":"aspect-square"}/>)}
     </div>
   );
 }
@@ -172,7 +172,7 @@ function SiteFooter(){
 }
 function MobileCTA(){
   return (
-    <a href={TEL_HREF} className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-gold text-[#161412] text-center font-bold py-4 flex items-center justify-center gap-2" style={{paddingBottom:"calc(1rem + env(safe-area-inset-bottom,0px))"}}>
+    <a href={SMS_HREF} className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-gold text-[#161412] text-center font-bold py-4 flex items-center justify-center gap-2" style={{paddingBottom:"calc(1rem + env(safe-area-inset-bottom,0px))"}}>
       <Icon name="phone" size={18}/>복원 문의
     </a>
   );
@@ -394,7 +394,7 @@ function Header({current,menuOpen,setMenuOpen}){
           {nav.map(([id,label])=> <a key={id} href={hrefFor(id)} className="hover:text-[var(--gold2)] transition-colors">{label}</a>)}
         </nav>
         <div className="flex items-center gap-3">
-          <a href={TEL_HREF} className="hidden sm:inline-block bg-gold text-[#161412] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--gold2)] transition-colors">복원 문의</a>
+          <a href={SMS_HREF} className="hidden sm:inline-block bg-gold text-[#161412] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--gold2)] transition-colors">복원 문의</a>
           <button className="lg:hidden text-[var(--beige)]" onClick={()=>setMenuOpen(!menuOpen)}><Icon name={menuOpen?"x":"menu"}/></button>
         </div>
       </div>
