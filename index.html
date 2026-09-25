@@ -243,7 +243,7 @@ function EducationPage({goHome}){
       <section className="pt-28 md:pt-32 pb-14 px-5 md:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-8">
-            <a href="#/" onClick={goHome} className="hover:text-[var(--gold2)]">홈</a><span>›</span><span className="gold">복원교육</span>
+            <a href="#/" onClick={goHome} className="hover:text-[var(--gold2)]">홈</a><span>›</span><span className="gold">복원 교육</span>
           </div>
           <p className="uppercase tracking-[0.3em] text-xs gold mb-3">EDUCATION</p>
           <h1 className="serif text-3xl md:text-5xl font-bold leading-tight mb-6">속성 교육은 그만!<br/><span className="gold">남들과 다른 특수 복원 기술</span>로<br/>고수익을 올리는 법</h1>
@@ -387,7 +387,7 @@ function App(){
     if(id) setTimeout(()=>{ const el=document.getElementById(id); if(el) el.scrollIntoView(); },50);
     else window.scrollTo(0,0);
   };
-  const nav=[["portfolio","복원 사례"],["services","서비스"],["education","복원교육"],["faq","FAQ"],["contact","복원 문의"]];
+  const nav=[["portfolio","복원 사례"],["services","복원 서비스"],["education","복원 교육"],["faq","FAQ"],["contact","복원 문의"]];
   const hrefFor=(id)=> id==='portfolio'?"#/case":id==='services'?"#/service":id==='education'?"#/education":"#"+id;
   const navClick=(e,id)=>{ if(id==='portfolio') return goCase(e); if(id==='services') return goService(e); if(id==='education') return goEducation(e); if(page!=='home') return goHome(e,id); setMenuOpen(false); };
 
