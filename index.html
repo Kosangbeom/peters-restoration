@@ -96,12 +96,12 @@ function BeforeAfter({className=""}){
       onMouseMove={e=>{ if(e.buttons===1) drag(e.clientX); }}
       onTouchMove={e=>drag(e.touches[0].clientX)}
       onClick={e=>drag(e.clientX)}>
-      <div className="absolute inset-0" style={{background:"linear-gradient(135deg,#4a4038,#6b5c4a 40%,#8a7458)"}}>
-        <div className="absolute bottom-4 left-4 text-xs tracking-widest text-[#eee7d8]/70 serif">BEFORE · 복원 전</div>
+      <div className="absolute inset-0" style={{background:"linear-gradient(135deg,#d8c39a,#c9a769 45%,#8f6f3f)"}}>
+        <div className="absolute bottom-4 right-4 text-xs tracking-widest text-[#161412] serif font-medium">AFTER · 복원 후</div>
       </div>
       <div className="absolute inset-0 overflow-hidden" style={{clipPath:`inset(0 ${100-pos}% 0 0)`}}>
-        <div className="absolute inset-0" style={{background:"linear-gradient(135deg,#d8c39a,#c9a769 45%,#8f6f3f)"}}></div>
-        <div className="absolute bottom-4 left-4 text-xs tracking-widest text-[#161412] serif font-medium">AFTER · 복원 후</div>
+        <div className="absolute inset-0" style={{background:"linear-gradient(135deg,#4a4038,#6b5c4a 40%,#8a7458)"}}></div>
+        <div className="absolute bottom-4 left-4 text-xs tracking-widest text-[#eee7d8]/70 serif">BEFORE · 복원 전</div>
       </div>
       <div className="absolute top-0 bottom-0 w-[2px] bg-[var(--gold2)]" style={{left:`${pos}%`}}>
         <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-[var(--gold2)] flex items-center justify-center shadow-lg">
