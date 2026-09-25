@@ -43,29 +43,35 @@ function Swatch({c1,c2,className=""}){
 }
 
 const cases=[
- {c1:"#8f6f3f",c2:"#d8c39a",tag:"가구·앤틱",t:"원목 콘솔 표면 스크래치 복원"},
- {c1:"#5a4a3a",c2:"#a68a63",tag:"명품 소품",t:"명품 가방 모서리 마모 복원"},
- {c1:"#3a3835",c2:"#6b6560",tag:"오디오",t:"스피커 인클로저 우레탄 복원"},
- {c1:"#4a3826",c2:"#8a6a45",tag:"악기",t:"그랜드 피아노 도장면 복원"},
- {c1:"#6b5c4a",c2:"#c9a769",tag:"상업 시설",t:"호텔 로비 대리석 크랙 복원"},
- {c1:"#2f2e2b",c2:"#5c574e",tag:"프리미엄 가전",t:"가전 외장 스크래치 복원"},
+ {c1:"#6b5c4a",c2:"#c9a769",tag:"실내외 원상복구",t:"마루 찍힘·스크래치 복원"},
+ {c1:"#8f6f3f",c2:"#d8c39a",tag:"가구 복원",t:"원목 가구 복원"},
+ {c1:"#5a4a3a",c2:"#a68a63",tag:"가구 복원",t:"가죽 소파 복원"},
+ {c1:"#3a3835",c2:"#6b6560",tag:"특수 복원",t:"스피커 복원"},
+ {c1:"#4a3826",c2:"#8a6a45",tag:"특수 복원",t:"악기 복원"},
+ {c1:"#2f2e2b",c2:"#5c574e",tag:"실내외 원상복구",t:"엘리베이터 복원"},
 ];
 const allCases=[
- {c1:"#8f6f3f",c2:"#d8c39a",tag:"가구·앤틱",t:"원목 콘솔 표면 스크래치 복원"},
- {c1:"#6b5c4a",c2:"#c9a769",tag:"가구·앤틱",t:"앤틱 원목 서랍장 찍힘 보수"},
- {c1:"#5a4a3a",c2:"#a68a63",tag:"가구·앤틱",t:"가죽 소파 얼룩·마모 복원"},
- {c1:"#4a3826",c2:"#8a6a45",tag:"가구·앤틱",t:"대리석 상판 크랙 메꿈"},
- {c1:"#5a4a3a",c2:"#a68a63",tag:"명품 소품",tag2:1,t:"명품 가방 모서리 마모 복원"},
- {c1:"#8f6f3f",c2:"#d8c39a",tag:"명품 소품",t:"명품 시계 케이스 스크래치 복원"},
- {c1:"#3a3835",c2:"#6b6560",tag:"오디오",t:"스피커 인클로저 우레탄 복원"},
- {c1:"#2f2e2b",c2:"#5c574e",tag:"오디오",t:"빈티지 앰프 하우징 복원"},
- {c1:"#4a3826",c2:"#8a6a45",tag:"악기",t:"그랜드 피아노 도장면 복원"},
- {c1:"#6b5c4a",c2:"#c9a769",tag:"악기",t:"바이올린 바디 스크래치 복원"},
- {c1:"#6b5c4a",c2:"#c9a769",tag:"상업 시설",t:"호텔 로비 대리석 크랙 복원"},
- {c1:"#8f6f3f",c2:"#d8c39a",tag:"상업 시설",t:"레스토랑 인테리어 몰딩 보수"},
- {c1:"#2f2e2b",c2:"#5c574e",tag:"프리미엄 가전",t:"가전 외장 스크래치 복원"},
- {c1:"#3a3835",c2:"#6b6560",tag:"프리미엄 가전",t:"냉장고 도어 패널 변색 복원"},
+ {c1:"#6b5c4a",c2:"#c9a769",tag:"실내외 원상복구",t:"마루 찍힘·스크래치 복원"},
+ {c1:"#5a4a3a",c2:"#a68a63",tag:"실내외 원상복구",t:"싱크대 상판 구멍 복원"},
+ {c1:"#8f6f3f",c2:"#d8c39a",tag:"실내외 원상복구",t:"걸레받이·몰딩 복원"},
+ {c1:"#4a3826",c2:"#8a6a45",tag:"실내외 원상복구",t:"방문 파손 복원"},
+ {c1:"#2f2e2b",c2:"#5c574e",tag:"실내외 원상복구",t:"엘리베이터 복원"},
+ {c1:"#3a3835",c2:"#6b6560",tag:"실내외 원상복구",t:"샷시 복원"},
+ {c1:"#5a4a3a",c2:"#a68a63",tag:"실내외 원상복구",t:"욕조 파손 복원"},
+ {c1:"#6b5c4a",c2:"#c9a769",tag:"실내외 원상복구",t:"도배 및 석고벽 파손 보수"},
+ {c1:"#2f2e2b",c2:"#5c574e",tag:"실내외 원상복구",t:"건물 외벽 간판자국 복원"},
+ {c1:"#8f6f3f",c2:"#d8c39a",tag:"가구 복원",t:"원목 가구 복원"},
+ {c1:"#5a4a3a",c2:"#a68a63",tag:"가구 복원",t:"가죽 소파 복원"},
+ {c1:"#4a3826",c2:"#8a6a45",tag:"가구 복원",t:"세라믹 가구 복원"},
+ {c1:"#3a3835",c2:"#6b6560",tag:"가구 복원",t:"유리 가구 복원"},
+ {c1:"#4a3826",c2:"#8a6a45",tag:"특수 복원",t:"유화 및 미술품 복원"},
+ {c1:"#6b5c4a",c2:"#c9a769",tag:"특수 복원",t:"조형물 복원"},
+ {c1:"#3a3835",c2:"#6b6560",tag:"특수 복원",t:"스피커 복원"},
+ {c1:"#2f2e2b",c2:"#5c574e",tag:"특수 복원",t:"악기 복원"},
+ {c1:"#8f6f3f",c2:"#d8c39a",tag:"특수 복원",t:"자동차 시트 복원"},
+ {c1:"#5a4a3a",c2:"#a68a63",tag:"특수 복원",t:"명품 가방 및 신발 복원"},
 ];
+
 const services=[
  {icon:"armchair",tag:"가구·앤틱",title:"원목·대리석·패브릭·가죽 소파",desc:"찍힘과 눌린 자국, 갈라짐을 결과 무늬까지 살려 보수합니다."},
  {icon:"gem",tag:"명품·소품",title:"럭셔리 및 명품 소품",desc:"가방·시계 등 브랜드 소재감을 훼손 없이 정밀 복원합니다."},
@@ -139,7 +145,7 @@ function ContactCTA(){
       <div className="max-w-2xl mx-auto text-center">
         <p className="uppercase tracking-[0.3em] text-xs gold mb-3">피터의복원</p>
         <h2 className="serif text-3xl md:text-4xl font-bold mb-4">무엇이든 편하게 문의하세요</h2>
-        <p className="text-[var(--muted)] mb-10">가구 · 명품 · 오디오 · 악기 · 가전 · 상업 시설물<br/>사진 몇 장만 보내주시면 바로 확인해 드립니다.</p>
+        <p className="text-[var(--muted)] mb-10">가구 · 명품 · 이사 전 원상복구 · 악기 · 인테리어 마감 · 상업 시설물 등<br/>사진 몇 장만 보내주시면 바로 확인해 드립니다.<br/><br/>작업과 강의 중일 때는 전화를 못받을 수 있습니다.<br/>문자로 사진과 지역을 남겨 주시면 확인 즉시 연락드립니다.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href={TEL_HREF} className="bg-gold text-[#161412] font-semibold px-7 py-4 rounded-full hover:bg-[var(--gold2)] transition-colors flex items-center justify-center gap-2">
             <Icon name="phone" size={18}/><span className="text-left"><span className="block">전화 상담</span><span className="block text-xs font-normal opacity-80">24시간 365일 언제든 연락 주세요</span></span>
@@ -158,14 +164,14 @@ function SiteFooter(){
       <p className="text-[10px] tracking-[0.4em] text-[var(--muted)] mb-2">아티스틱 복원 전문</p>
       <p className="serif gold text-2xl font-bold mb-3">피터의 복원</p>
       <p className="text-[var(--muted)] text-sm mb-1">아티스틱 복원 전문업체 · 대표번호 {TEL} · 서비스 지역 서울 · 경기 · 인천 · 전국</p>
-      <p className="text-xs text-[var(--muted)] mt-4">© 2026 PETER'S RESTORATION. ALL RIGHTS RESERVED.</p>
+      <p className="text-xs text-[var(--muted)] mt-4">© 2015 PETER'S RESTORATION. ALL RIGHTS RESERVED.</p>
     </footer>
   );
 }
 function MobileCTA(){
   return (
     <a href={TEL_HREF} className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-gold text-[#161412] text-center font-bold py-4 flex items-center justify-center gap-2" style={{paddingBottom:"calc(1rem + env(safe-area-inset-bottom,0px))"}}>
-      <Icon name="phone" size={18}/>시공 문의
+      <Icon name="phone" size={18}/>복원 문의
     </a>
   );
 }
@@ -322,25 +328,40 @@ function EducationPage({goHome}){
   );
 }
 function CasePage({goHome}){
+  const [filter,setFilter]=useState(null);
+  const cats=["실내외 원상복구","가구 복원","특수 복원"];
+  const shown = filter ? [filter] : cats;
   return (
     <div>
       <section className="pt-28 md:pt-32 pb-16 px-5 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-8">
-            <a href="#/" onClick={goHome} className="hover:text-[var(--gold2)]">홈</a><span>›</span><span className="gold">복원 사례</span>
+            <a href="#/" onClick={goHome} className="hover:text-[var(--gold2)]">홈</a><span>›</span>
+            {filter ? (<><a href="#/case" onClick={(e)=>{e.preventDefault();setFilter(null);window.scrollTo(0,0);}} className="hover:text-[var(--gold2)]">복원 사례</a><span>›</span><span className="gold">{filter}</span></>) : <span className="gold">복원 사례</span>}
           </div>
           <p className="uppercase tracking-[0.3em] text-xs gold mb-3">PORTFOLIO</p>
-          <h1 className="serif text-3xl md:text-5xl font-bold mb-4">복원 사례</h1>
-          <p className="text-[var(--muted)] max-w-xl mb-12">교체하지 않고 손상된 부분만 되살린 현장 기록입니다.<br/>가구부터 명품, 오디오, 악기, 상업 시설물까지.</p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allCases.map((c,i)=>(
-              <div key={i} className="group">
-                <Swatch c1={c.c1} c2={c.c2} className="aspect-[4/3] mb-4 group-hover:opacity-90 transition-opacity"/>
-                <p className="font-bold serif mb-1">{c.t}</p>
-                <p className="text-xs text-[var(--muted)]">{c.tag}</p>
-              </div>
+          <h1 className="serif text-3xl md:text-5xl font-bold mb-4">{filter?filter:"복원 사례"}</h1>
+          <p className="text-[var(--muted)] max-w-xl mb-6">교체하지 않고 손상된 부분만 되살린 현장 기록입니다.<br/>실내외 원상복구부터 가구, 특수 복원까지.</p>
+          <div className="flex flex-wrap gap-3 mb-12">
+            {cats.map(c=>(
+              <button key={c} onClick={()=>{setFilter(filter===c?null:c);window.scrollTo(0,0);}} className={"text-xs px-4 py-2 rounded-full border transition-colors "+(filter===c?"bg-gold text-[#161412] border-gold":"border-[#3a352c] text-[var(--muted)] hover:border-[var(--gold)] hover:text-[var(--gold2)]")}>{c}</button>
             ))}
+            {filter && <button onClick={()=>{setFilter(null);window.scrollTo(0,0);}} className="text-xs px-4 py-2 rounded-full border border-[#3a352c] text-[var(--muted)] hover:border-[var(--gold)] hover:text-[var(--gold2)]">전체 보기</button>}
           </div>
+          {shown.map(cat=>(
+            <div key={cat} className="mb-14">
+              {!filter && <h2 onClick={()=>{setFilter(cat);window.scrollTo(0,0);}} className="serif text-xl font-bold gold mb-6 cursor-pointer hover:underline w-fit">{cat}</h2>}
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {allCases.filter(c=>c.tag===cat).map((c,i)=>(
+                  <div key={i} className="group">
+                    <Swatch c1={c.c1} c2={c.c2} className="aspect-[4/3] mb-4 group-hover:opacity-90 transition-opacity"/>
+                    <p className="font-bold serif mb-1">{c.t}</p>
+                    {!filter ? <button onClick={()=>{setFilter(c.tag);window.scrollTo(0,0);}} className="text-xs text-[var(--muted)] hover:text-[var(--gold2)] hover:underline">{c.tag}</button> : <p className="text-xs text-[var(--muted)]">{c.tag}</p>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       <ContactCTA/>
@@ -366,7 +387,7 @@ function App(){
     if(id) setTimeout(()=>{ const el=document.getElementById(id); if(el) el.scrollIntoView(); },50);
     else window.scrollTo(0,0);
   };
-  const nav=[["portfolio","복원 사례"],["services","서비스"],["education","복원교육"],["faq","FAQ"],["contact","시공 문의"]];
+  const nav=[["portfolio","복원 사례"],["services","서비스"],["education","복원교육"],["faq","FAQ"],["contact","복원 문의"]];
   const hrefFor=(id)=> id==='portfolio'?"#/case":id==='services'?"#/service":id==='education'?"#/education":"#"+id;
   const navClick=(e,id)=>{ if(id==='portfolio') return goCase(e); if(id==='services') return goService(e); if(id==='education') return goEducation(e); if(page!=='home') return goHome(e,id); setMenuOpen(false); };
 
@@ -383,7 +404,7 @@ function App(){
           {nav.map(([id,label])=> <a key={id} href={hrefFor(id)} onClick={(e)=>navClick(e,id)} className="hover:text-[var(--gold2)] transition-colors">{label}</a>)}
         </nav>
         <div className="flex items-center gap-3">
-          <a href={TEL_HREF} className="hidden sm:inline-block bg-gold text-[#161412] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--gold2)] transition-colors">시공 문의</a>
+          <a href={TEL_HREF} className="hidden sm:inline-block bg-gold text-[#161412] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--gold2)] transition-colors">복원 문의</a>
           <button className="lg:hidden text-[var(--beige)]" onClick={()=>setMenuOpen(!menuOpen)}><Icon name={menuOpen?"x":"menu"}/></button>
         </div>
       </div>
@@ -398,8 +419,8 @@ function App(){
       <div className="max-w-5xl mx-auto mb-8"><ImageStrip/></div>
       <div className="max-w-3xl mx-auto text-center pb-20">
         <p className="uppercase tracking-[0.3em] text-xs gold mb-5">ARTISTIC SURFACE RESTORATION</p>
-        <h1 className="serif text-3xl md:text-5xl font-bold leading-tight mb-6">가구 스크래치부터 명품·오디오·<br className="hidden md:block"/>악기 손상까지, <span className="gold">교체 없이</span> 정밀 복원합니다.</h1>
-        <p className="text-[var(--muted)] text-base md:text-lg leading-relaxed mb-9">원목 · 대리석 · 가죽 · 우레탄 도장 · 명품 소재까지,<br/>손상된 부분만 정밀하게 되살립니다.</p>
+        <h1 className="serif text-3xl md:text-5xl font-bold leading-tight mb-6">흠집은 지우고,<br/><span className="gold">가치는 처음 그대로</span></h1>
+        <p className="text-[var(--muted)] text-base md:text-lg leading-relaxed mb-9">가구·명품·오디오·악기부터 실내 원상복구까지 —<br/>아티스틱 복원 전문, 피터의 복원</p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href={TEL_HREF} className="bg-gold text-[#161412] font-semibold px-7 py-3.5 rounded-full hover:bg-[var(--gold2)] transition-colors flex items-center gap-2"><Icon name="phone" size={18}/>지금 바로 상담하기</a>
           <a href="#portfolio" className="border border-[#4a4438] px-7 py-3.5 rounded-full hover:border-[var(--gold)] hover:text-[var(--gold2)] transition-colors">복원 사례 보기</a>
