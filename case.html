@@ -114,7 +114,7 @@ const allCases=[
  {c1:"#6b5c4a",c2:"#c9a769",img:CASE_IMG_GOLD,tag:"가구 복원",t:"가구 금박 복원"},
  {c1:"#2f2e2b",c2:"#5c574e",img:CASE_IMG_SYSTEM,tag:"가구 복원",t:"시스템가구 복원"},
  {c1:"#4a3826",c2:"#8a6a45",img:CASE_IMG_PAINTING,tag:"특수 복원",t:"유화 및 미술품 복원"},
- {c1:"#6b5c4a",c2:"#c9a769",img:CASE_IMG_SCULPTURE,tag:"특수 복원",t:"조형물 복원"},
+ {c1:"#6b5c4a",c2:"#c9a769",img:CASE_IMG_SCULPTURE,tag:"특수 복원",t:"조형물 복원",href:"case-gorilla-sculpture.html"},
  {c1:"#3a3835",c2:"#6b6560",img:CASE_IMG_SPEAKER,tag:"특수 복원",t:"스피커 복원"},
  {c1:"#2f2e2b",c2:"#5c574e",img:CASE_IMG_INSTRUMENT,tag:"특수 복원",t:"악기 복원"},
  {c1:"#8f6f3f",c2:"#d8c39a",img:CASE_IMG_SEAT,tag:"특수 복원",t:"자동차 시트 복원"},
@@ -407,8 +407,8 @@ function CasePage(){
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {allCases.filter(c=>c.tag===cat).map((c,i)=>(
                   <div key={i} className="group">
-                    <Swatch c1={c.c1} c2={c.c2} img={c.img} imgs={c.imgs} className="aspect-[4/3] mb-4 group-hover:opacity-90 transition-opacity"/>
-                    <p className="font-bold serif mb-1">{c.t}</p>
+                    {c.href ? <a href={c.href} className="block" aria-label={c.t+" 자세히 보기"}><Swatch c1={c.c1} c2={c.c2} img={c.img} imgs={c.imgs} className="aspect-[4/3] mb-4 group-hover:opacity-90 transition-opacity"/></a> : <Swatch c1={c.c1} c2={c.c2} img={c.img} imgs={c.imgs} className="aspect-[4/3] mb-4 group-hover:opacity-90 transition-opacity"/>}
+                    <p className="font-bold serif mb-1">{c.href ? <a href={c.href} className="hover:text-[var(--gold2)] hover:underline">{c.t} <span className="text-xs gold font-sans">자세히 보기 →</span></a> : c.t}</p>
                     {!filter ? <button onClick={()=>{setFilter(c.tag);window.scrollTo(0,0);}} className="text-xs text-[var(--muted)] hover:text-[var(--gold2)] hover:underline">{c.tag}</button> : <p className="text-xs text-[var(--muted)]">{c.tag}</p>}
                   </div>
                 ))}
